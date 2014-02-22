@@ -1,0 +1,28 @@
+.header{
+	background:#ccc;
+	padding:10px;
+	margin-bottom:5px; 
+	cursor:pointer;    
+}
+
+.table, .table tr, .table td {
+	border: 1px solid black;
+}
+
+.highlight_green {
+	background-color: lightgreen;
+}
+
+.highlight_pink {
+	background-color: pink;
+}
+
+.highlight_blue {
+	background-color: lightcyan;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}

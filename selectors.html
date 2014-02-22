@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="My first jQuery Example">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My first jQuery Example</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="author" href="humans.txt"> -->
+    </head>
+    <body>
+        <h2>jQuery Tutorial</h2>
+        based on <a href="http://www.youtube.com/playlist?list=PL6B08BAA57B5C7810">Full jQuery series for http://www.thenewboston.com/</a>
+        <p></p>
+
+
+        <div class="header">load() function</div>
+            <div class="body" id="div_load_function">
+                <iframe src="http://www.wikipedia.com" frameborder="0"></iframe>
+                <p id="p_iframe">wait for it</p>
+                <!-- <img id="img_d3" src="/Users/cindylamm/Desktop/US Geo input data.png" alt="img" width=200> -->
+                <img id="img_d3" src="/Users/cindylamm/Pictures/monkey.JPG" alt="img" width=200>
+                <p id="p_img">wait for it</p>
+            </div>
+
+
+        <div class="header">Simple Selectors</div>
+            <div class="body" id="div_simple_selectors">
+                <p>This is a paragraph</p>
+                <p>This is the second paragraph</p>
+                <p id="para">dummy</p>            
+            </div>
+
+
+        <div class="header">Buttons</div>
+            <div class="body" id="div_buttons">
+                <input type="button" value="A button">
+                <input type="button" value="A 2nd button">
+                <input type="submit" value="Submit">
+            </div>
+		
+
+		<div class="header">Style changes</div>
+            <div class="body" id="div_style_changes">
+                <input type="text" name="Text field">
+
+        		<div>
+                <textarea name="Text area" cols="30" rows="10"></textarea>
+                </div>
+                
+                <input type="button" id="css_button1" value="Click to change color">
+        		<input type="button" id="css_button2" value="Click to change color back">
+        		<p id="css_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quaerat veritatis dicta consequatur ab? Maxime, amet, hic excepturi error aliquid et consequuntur aliquam illum similique velit fugit praesentium obcaecati neque.</p>
+            </div>
+        
+            <div class="body" id="div_wo_style_changes">
+                <input type="text" size=50 value="text field without style changes" id="text_wo_changes">
+        		
+                <textarea name="foo" id="textarea_wo_changes" cols="30" rows="10">textarea without style changes</textarea>
+            </div>
+
+        
+        <div class="header">Multiple Selector</div>
+            <div class="body" id="div_multiple_selector">
+                <input type="button" value="Press me" id="mult_sel_button">
+        		<input type="button" value="Press me too">
+                <p id="mult_sel_para">Click me</p>
+        		<p>Click me too</p>
+            </div>
+
+
+        <div class="header">Even/odd Selector</div>
+            <div class="body" id="div_even_odd_selector">
+        		<table class="table" id="table1">
+                    <tr><td>Some data</td><td>Some more data</td><td>id col</td></tr>
+                    <tr><td>Some data</td><td>Some more data</td><td>id col</td></tr>
+                    <tr><td>Some data</td><td>Some more data</td><td>id col</td></tr>
+                </table>
+                <p></p>
+                <table class="table" id="table2">
+                    <tr><td>Some data</td><td>Some more data</td><td>id col</td></tr>
+                    <tr><td>Some data</td><td>Some more data</td><td>id col</td></tr>
+                    <tr><td>Some data</td><td>Some more data</td><td>id col</td></tr>
+                </table>
+                <p></p>
+                <table class="table" id="table3">
+        			<tr><td>Some data</td><td>Some more data</td><td>id col</td></tr>
+        			<tr><td>Some data</td><td>Some more data</td><td>id col</td></tr>
+        			<tr><td>Some data</td><td>Some more data</td><td>id col</td></tr>
+        		</table>
+
+                <div id="div_to_color">
+                    <p>Text 1</p>
+                    <p>Text 2</p>
+                    <p>Text 3</p>
+                    <p>Text 4</p>
+                </div>
+            </div>
+
+
+        <div class="header">Attribute Selector</div>
+            <div class="body" id="div_attribute_selector">
+                <p>Name: <br><input type="text"></p>
+                <p>Email: <br><input type="email" size=30></p>
+                <!-- define default value in js to have it applied to ALL email fields -->
+                <p>Confirm email: <br><input type="email" size=30></p>
+                <p>Password: <br><input type="password" size=30></p>
+                <p>Confirm password: <br><input type="password" size=30></p>
+            </div>
+
+
+        <div class="header">Contains Selector</div>
+            <div class="body" id="div_contains_selector">
+                <p><input type="text" id="search_name"></p>
+
+                <ul id="names">
+                    <li>Alex Garret</li>
+                    <li>Barney Garret</li>
+                    <li>Christian Garret</li>
+                    <li>Daniel Garret</li>
+                    <li>Ashley Garret</li>
+                </ul>
+            </div>        
+      
+
+
+        <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.0.min.js"><\/script>')</script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-migrate-1.2.1.min.js"><\/script>')</script>
+        <script src="js/selectors.js"></script>
+    </body>
+</html>
+
