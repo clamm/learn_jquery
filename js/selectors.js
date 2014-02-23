@@ -111,7 +111,7 @@ $('#mult_sel_button, #mult_sel_para').click(function() {
 
 // reference by type
 $('#div_multiple_selector').find('input:button, p').click(function() {
-	alert('Something within this was pressed/clicked');
+	alert('Something within this section was pressed/clicked');
 });
 
 
@@ -178,7 +178,28 @@ $(document).ready(function() {
 
 
 // ----- Contains selector
+$(document).ready(function() {
+	$('#search_names').addClass('highlight_pink');
+	$('#search_names_trimmed_spaces').addClass('highlight_green');
 
+	$('#div_contains_selector').find(':text').keyup(function() {
+		search_value = $('#search_names').val();
+		trimmed_spaces = $.trim($('#search_names_trimmed_spaces').val());
+		
+
+		// remove highlight on every keyup
+		$("#names li").removeClass('highlight_pink highlight_green');
+
+		// add highlight (again) only if necessary on newest keyup
+		if (search_value != '') {
+			$("#names li:contains('" + search_value + "')").addClass('highlight_pink');
+		}
+
+		if (trimmed_spaces != '') {
+			$("#names li:contains('" + trimmed_spaces +  "')").addClass('highlight_green');
+		};
+	});
+});
 
 
 
