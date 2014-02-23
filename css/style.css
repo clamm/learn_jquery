@@ -28,13 +28,14 @@ ul {
 }
 
 /*based on https://github.com/andrei4002/plastic-buttons/blob/master/stylesheets/screen.css*/
+
 div {
   padding: 0.3em 0.6em;
   border: 1px solid;
   border-color: #E7E7E7 #D3D3D3 #ABABAB;
   margin: 0;
   text-decoration: none;
-  /*text-align: center;*/
+  text-align: center;
   font: bold 14px/normal "helvetica neue", tahoma, verdana, arial, sans-serif;
   cursor: pointer;
   color: #808080;

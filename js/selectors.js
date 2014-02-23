@@ -56,12 +56,12 @@ $(':submit').click(function(){
 // ----- Style changes
 
 // change bg color of text field when clicking into it
-$('#div_style_changes').find(':text').focusin(function() {
+$(':text').focusin(function() {
 	$(this).css('background-color', 'lightyellow');
 });
 
 // change bg color of text field when clicking out of
-$('#div_style_changes').find(':text').focusout(function() {
+$(':text').focusout(function() {
 	$(this).css('background-color', 'white');
 });
 
@@ -171,8 +171,8 @@ $(document).ready(function() {
 			};
 		});
 
-	// make all external links open in a new window
-	$('a').attr('target', '_blank');
+	// // make all external links open in a new window
+	// $('a').attr('target', '_blank');
 });
 
 
@@ -202,6 +202,33 @@ $(document).ready(function() {
 });
 
 
+
+// ----- Disable button
+$('#submit_disable').click(function() {
+	$(this).attr('value', 'Please wait...');
+	$(this).attr('disabled', true);
+});
+
+
+
+// ----- Font size switcher
+
+function change_size(element, size) {
+	var current_size = parseInt(element.css('font-size'));
+
+	if (size == "smaller") {
+		var new_size = current_size - 2;
+	} else if (size == "bigger") {
+		var new_size = current_size + 2;
+	};
+
+	element.css('font-size', new_size + 'px');
+}
+
+$('#div_font_size_switcher').find('a').click(function() {
+
+	change_size($('#div_font_size_switcher').find('p'), $(this).text());
+});
 
 
 
