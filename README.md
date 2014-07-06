@@ -5,3 +5,6 @@ Learn jQuery (and HTML & CSS) by following the tutorial series https://www.youtu
 
 *Note*
 Developed in Chrome (Version 33.0.1750.117) only.
+
+
+See also the following jsFiddle on selectors: http://jsfiddle.net/cindylamm/FhsL8/
